@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Empire Equity Holdings LLC | Connecticut Multifamily Investment & Asset Management
+  </title>
+
+  <meta
+    name="description"
+    content="Empire Equity Holdings LLC acquires, stabilizes, and operates multifamily housing assets in Connecticut through disciplined ownership, operational excellence, and long-term stewardship."
+  >
+
+  <meta
+    name="keywords"
+    content="Empire Equity Holdings LLC, Connecticut multifamily, New Britain real estate, multifamily asset management, NOI optimization, workforce housing, real estate investment"
+  >
+
+  <meta name="author" content="Empire Equity Holdings LLC">
+  <meta name="theme-color" content="#071426">
+
+  <meta property="og:type" content="website">
+  <meta
+    property="og:title"
+    content="Empire Equity Holdings LLC | Connecticut Multifamily Investment & Asset Management"
+  >
+  <meta
+    property="og:description"
+    content="Building value and strengthening communities through disciplined multifamily ownership and asset management."
+  >
+  <meta
+    property="og:image"
+    content="building-1.jpg"
+  >
+  <meta
+    property="og:url"
+    content="https://www.empireequityholdings.com/"
+  >
+
+  <link rel="canonical" href="https://www.empireequityholdings.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            empire: {
+              navy: "#071426",
+              gold: "#D4AF37",
+              white: "#FFFFFF",
+              gray: "#F5F5F5",
+              charcoal: "#222222"
+            }
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "Georgia", "serif"],
+            sans: ["Inter", "Arial", "sans-serif"]
+          },
+          boxShadow: {
+            executive: "0 24px 70px rgba(7, 20, 38, 0.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      color: #071426;
+      background: #D4AF37;
+    }
+
+    .hero-background {
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(7, 20, 38, 0.98) 0%,
+          rgba(7, 20, 38, 0.90) 40%,
+          rgba(7, 20, 38, 0.52) 72%,
+          rgba(7, 20, 38, 0.24) 100%
+        ),
+        url("building-1.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .gold-line {
+      width: 64px;
+      height: 2px;
+      background: #D4AF37;
+    }
+
+    .mobile-panel {
+      transform: translateX(-100%);
+      transition: transform 250ms ease;
+    }
+
+    .mobile-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .mobile-overlay {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 250ms ease;
+    }
+
+    .mobile-overlay.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .menu-line {
+      transition:
+        transform 200ms ease,
+        opacity 200ms ease;
+    }
+
+    .menu-button.is-open .menu-line:first-child {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-button.is-open .menu-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.is-open .menu-line:last-child {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .focus-ring:focus-visible {
+      outline: 3px solid rgba(212, 175, 55, 0.7);
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body class="bg-white font-sans text-empire-charcoal antialiased">
+
+  <!-- Skip Link -->
+  <a
+    href="#main-content"
+    class="focus-ring fixed left-4 top-4 z-[100] -translate-y-24 rounded bg-empire-gold px-4 py-3 font-semibold text-empire-navy transition focus:translate-y-0"
+  >
+    Skip to main content
+  </a>
+
+  <!-- Mobile Overlay -->
+  <div
+    id="mobileOverlay"
+    class="mobile-overlay fixed inset-0 z-40 bg-empire-navy/70 backdrop-blur-sm lg:hidden"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Side Navigation -->
+  <aside
+    id="mobileMenu"
+    class="mobile-panel fixed inset-y-0 left-0 z-50 flex w-[88%] max-w-sm flex-col bg-empire-navy px-7 py-7 text-white shadow-2xl lg:hidden"
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <div class="flex items-center justify-between border-b border-white/10 pb-6">
+      <a
+        href="#home"
+        class="focus-ring flex items-center gap-3 rounded"
+        aria-label="Empire Equity Holdings LLC home"
+      >
+        <img
+          src="logo.png"
+          alt="Empire Equity Holdings LLC logo"
+          class="h-12 w-auto max-w-[190px] object-contain"
+        >
+      </a>
+
+      <button
+        id="mobileCloseButton"
+        type="button"
+        class="focus-ring rounded-md p-2 text-white transition hover:bg-white/10"
+        aria-label="Close navigation menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.8"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mt-8 flex flex-col" aria-label="Mobile primary navigation">
+      <a
+        href="#home"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Home
+      </a>
+
+      <a
+        href="#mission"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Mission
+      </a>
+
+      <a
+        href="#about"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        About
+      </a>
+
+      <a
+        href="#portfolio"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Portfolio
+      </a>
+
+      <a
+        href="#services"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Services
+      </a>
+
+      <a
+        href="#insights"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Insights
+      </a>
+
+      <a
+        href="#contact"
+        class="mobile-nav-link focus-ring border-b border-white/10 py-4 text-lg font-medium transition hover:text-empire-gold"
+      >
+        Contact
+      </a>
+    </nav>
+
+    <div class="mt-auto border-t border-white/10 pt-7">
+      <a
+        href="https://www.linkedin.com/company/empire-equity-holdings-llc/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="focus-ring inline-flex w-full items-center justify-center gap-3 rounded-sm border border-empire-gold px-5 py-3 font-semibold text-empire-gold transition hover:bg-empire-gold hover:text-empire-navy"
+        aria-label="Visit Empire Equity Holdings LLC LinkedIn page"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+        </svg>
+        Follow on LinkedIn
+      </a>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header
+    id="siteHeader"
+    class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/95 backdrop-blur-md"
+  >
+    <div class="mx-auto flex h-20 max-w-7xl items-center px-5 sm:px-6 lg:px-8">
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="mobileMenuButton"
+        type="button"
+        class="menu-button focus-ring mr-4 flex h-11 w-11 flex-col items-center justify-center gap-1 rounded-md border border-slate-200 text-empire-navy transition hover:border-empire-gold lg:hidden"
+        aria-label="Open navigation menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span class="menu-line block h-0.5 w-5 bg-current"></span>
+        <span class="menu-line block h-0.5 w-5 bg-current"></span>
+        <span class="menu-line block h-0.5 w-5 bg-current"></span>
+      </button>
+
+      <!-- Logo -->
+      <a
+        href="#home"
+        class="focus-ring flex shrink-0 items-center rounded"
+        aria-label="Empire Equity Holdings LLC home"
+      >
+        <img
+          src="logo.png"
+          alt="Empire Equity Holdings LLC logo"
+          class="h-12 w-auto max-w-[190px] object-contain sm:h-14 sm:max-w-[230px]"
+        >
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav
+        class="ml-auto hidden items-center gap-6 lg:flex xl:gap-8"
+        aria-label="Primary navigation"
+      >
+        <a href="#home" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Home</a>
+        <a href="#mission" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Mission</a>
+        <a href="#about" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">About</a>
+        <a href="#portfolio" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Portfolio</a>
+        <a href="#services" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Services</a>
+        <a href="#insights" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Insights</a>
+        <a href="#contact" class="focus-ring rounded text-sm font-semibold text-slate-700 transition hover:text-empire-gold">Contact</a>
+
+        <a
+          href="https://www.linkedin.com/company/empire-equity-holdings-llc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-full bg-empire-navy text-white transition hover:bg-empire-gold hover:text-empire-navy"
+          aria-label="Empire Equity Holdings LLC LinkedIn page"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="hero-background relative flex min-h-[calc(100vh-5rem)] items-center overflow-hidden"
+      aria-labelledby="hero-title"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-empire-navy/70 via-transparent to-transparent lg:hidden"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative mx-auto w-full max-w-7xl px-5 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
+        <div class="max-w-3xl">
+          <p class="mb-6 text-xs font-bold uppercase tracking-[0.28em] text-empire-gold sm:text-sm">
+            Connecticut Multifamily Investment & Asset Management
+          </p>
+
+          <h1
+            id="hero-title"
+            class="font-serif text-5xl font-bold leading-[1.08] text-white sm:text-6xl lg:text-7xl"
+          >
+            Building Value.
+            <span class="block text-empire-gold">Strengthening Communities.</span>
+          </h1>
+
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
+            Empire Equity Holdings LLC acquires, stabilizes, and operates
+            multifamily housing assets through disciplined ownership,
+            operational excellence, and long-term stewardship.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#portfolio"
+              class="focus-ring inline-flex items-center justify-center rounded-sm bg-empire-gold px-7 py-4 text-sm font-bold uppercase tracking-wider text-empire-navy transition hover:bg-white"
+            >
+              View Our Portfolio
+            </a>
+
+            <a
+              href="#contact"
+              class="focus-ring inline-flex items-center justify-center rounded-sm border border-white/60 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-white backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-empire-navy"
+            >
+              Connect With Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="#mission"
+        class="focus-ring absolute bottom-8 left-1/2 hidden -translate-x-1/2 rounded-full border border-white/40 p-3 text-white transition hover:border-empire-gold hover:text-empire-gold md:block"
+        aria-label="Scroll to our mission"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.8"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19 9-7 7-7-7"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <!-- Institutional Highlights -->
+    <section class="border-b border-slate-200 bg-white" aria-label="Company highlights">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 px-5 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div class="border-b border-r border-slate-200 px-4 py-8 text-center lg:border-b-0">
+          <p class="font-serif text-3xl font-bold text-empire-navy">8</p>
+          <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
+            Residential Units
+          </p>
+        </div>
+
+        <div class="border-b border-slate-200 px-4 py-8 text-center lg:border-b-0 lg:border-r">
+          <p class="font-serif text-3xl font-bold text-empire-navy">CT</p>
+          <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
+            Market Focus
+          </p>
+        </div>
+
+        <div class="border-r border-slate-200 px-4 py-8 text-center">
+          <p class="font-serif text-3xl font-bold text-empire-navy">2026</p>
+          <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
+            Inaugural Acquisition
+          </p>
+        </div>
+
+        <div class="px-4 py-8 text-center">
+          <p class="font-serif text-3xl font-bold text-empire-navy">NOI</p>
+          <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
+            Performance Focus
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section id="mission" class="bg-empire-gray py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+            Purpose & Principles
+          </p>
+
+          <h2 class="mt-4 font-serif text-4xl font-bold text-empire-navy sm:text-5xl">
+            Our Mission
+          </h2>
+
+          <div class="gold-line mx-auto mt-6"></div>
+
+          <p class="mt-8 font-serif text-2xl leading-relaxed text-empire-navy sm:text-3xl">
+            Our mission is to build strong foundations so people can build the
+            lives they’ve always imagined.
+          </p>
+
+          <p class="mt-6 text-lg leading-8 text-slate-600">
+            Empire Equity Holdings LLC believes real estate ownership is not
+            just about acquiring buildings. It is about operating assets
+            responsibly, improving housing quality, protecting long-term value,
+            and creating stability for residents and communities.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="border-t-2 border-empire-gold bg-white p-8 shadow-sm">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-empire-navy text-empire-gold">
+              <span class="font-serif text-xl font-bold">01</span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-bold text-empire-navy">
+              Disciplined Ownership
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-600">
+              We focus on long-term value creation through thoughtful
+              decision-making and operational accountability.
+            </p>
+          </article>
+
+          <article class="border-t-2 border-empire-gold bg-white p-8 shadow-sm">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-empire-navy text-empire-gold">
+              <span class="font-serif text-xl font-bold">02</span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-bold text-empire-navy">
+              Operational Excellence
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-600">
+              We use systems, data, and performance metrics to improve property
+              outcomes.
+            </p>
+          </article>
+
+          <article class="border-t-2 border-empire-gold bg-white p-8 shadow-sm">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-empire-navy text-empire-gold">
+              <span class="font-serif text-xl font-bold">03</span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-bold text-empire-navy">
+              Tenant Quality
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-600">
+              We believe stable housing begins with clear expectations,
+              responsible screening, and consistent operations.
+            </p>
+          </article>
+
+          <article class="border-t-2 border-empire-gold bg-white p-8 shadow-sm">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-empire-navy text-empire-gold">
+              <span class="font-serif text-xl font-bold">04</span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-bold text-empire-navy">
+              Community Investment
+            </h3>
+
+            <p class="mt-4 leading-7 text-slate-600">
+              We aim to strengthen communities one property at a time.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-white py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
+
+        <div class="relative">
+          <div
+            class="absolute -bottom-5 -left-5 hidden h-full w-full border border-empire-gold lg:block"
+            aria-hidden="true"
+          ></div>
+
+          <img
+            src="principal.jpg"
+            alt="Yveson Laurore, Managing Member of Empire Equity Holdings LLC"
+            class="relative z-10 aspect-[4/5] w-full object-cover shadow-executive"
+            loading="lazy"
+          >
+
+          <div class="relative z-20 -mt-16 ml-auto max-w-sm bg-empire-navy p-6 text-white shadow-xl sm:mr-6">
+            <p class="font-serif text-2xl font-bold">Yveson Laurore</p>
+            <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-empire-gold">
+              Founder, Owner & Asset Manager
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+            Executive Leadership
+          </p>
+
+          <h2 class="mt-4 font-serif text-4xl font-bold leading-tight text-empire-navy sm:text-5xl">
+            About Empire Equity Holdings LLC
+          </h2>
+
+          <div class="gold-line mt-6"></div>
+
+          <div class="mt-8 space-y-5 text-lg leading-8 text-slate-600">
+            <p>
+              Empire Equity Holdings LLC was founded by Yveson Laurore, a
+              healthcare performance improvement professional and real estate
+              investor with a strong background in systems, accountability, and
+              operational excellence.
+            </p>
+
+            <p>
+              After years of studying multifamily real estate and working
+              through the challenges of acquiring a first asset, Empire Equity
+              Holdings LLC closed on its first multifamily portfolio in New
+              Britain, Connecticut.
+            </p>
+
+            <p>
+              That experience reinforced one core belief:
+            </p>
+          </div>
+
+          <blockquote class="my-8 border-l-2 border-empire-gold bg-empire-gray px-7 py-6">
+            <p class="font-serif text-2xl font-bold leading-relaxed text-empire-navy">
+              “Real estate success is not created at closing. It is created
+              through disciplined operations after closing.”
+            </p>
+          </blockquote>
+
+          <h3 class="font-serif text-3xl font-bold text-empire-navy">
+            Why We Invest
+          </h3>
+
+          <p class="mt-5 text-lg leading-8 text-slate-600">
+            We invest in workforce housing because safe, well-operated housing
+            is essential to strong communities. Our focus is on acquiring and
+            improving multifamily properties where better systems, stronger
+            tenant quality, and disciplined asset management can create
+            long-term value.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-empire-navy py-20 text-white sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+            Current Portfolio
+          </p>
+
+          <h2 class="mt-4 font-serif text-4xl font-bold sm:text-5xl">
+            Focused Multifamily Ownership
+          </h2>
+
+          <div class="gold-line mt-6"></div>
+
+          <p class="mt-7 text-lg leading-8 text-slate-300">
+            Our portfolio strategy centers on disciplined acquisition,
+            operational stabilization, responsible capital allocation, and
+            long-term ownership.
+          </p>
+        </div>
+
+        <article class="mt-14 overflow-hidden bg-white text-empire-charcoal shadow-2xl">
+          <div class="grid lg:grid-cols-2">
+            <div class="min-h-[360px] lg:min-h-[650px]">
+              <img
+                src="building-1.jpg"
+                alt="240-242 Washington St multifamily property in New Britain Connecticut"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-7 sm:p-10 lg:p-14">
+              <p class="text-sm font-bold uppercase tracking-[0.22em] text-empire-gold">
+                Featured Property
+              </p>
+
+              <h3 class="mt-4 font-serif text-4xl font-bold text-empire-navy">
+                240-242 Washington St
+              </h3>
+
+              <p class="mt-2 text-lg font-semibold text-slate-500">
+                New Britain, Connecticut
+              </p>
+
+              <dl class="mt-8 grid gap-px overflow-hidden border border-slate-200 bg-slate-200 sm:grid-cols-2">
+                <div class="bg-white p-5">
+                  <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Asset Type
+                  </dt>
+                  <dd class="mt-2 font-semibold text-empire-navy">
+                    Multifamily Residential
+                  </dd>
+                </div>
+
+                <div class="bg-white p-5">
+                  <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Units
+                  </dt>
+                  <dd class="mt-2 font-semibold text-empire-navy">
+                    8 Residential Units
+                  </dd>
+                </div>
+
+                <div class="bg-white p-5">
+                  <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Acquisition
+                  </dt>
+                  <dd class="mt-2 font-semibold text-empire-navy">
+                    January 2026
+                  </dd>
+                </div>
+
+                <div class="bg-white p-5">
+                  <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Strategy
+                  </dt>
+                  <dd class="mt-2 font-semibold text-empire-navy">
+                    Stabilization & Long-Term Hold
+                  </dd>
+                </div>
+              </dl>
+
+              <p class="mt-8 leading-7 text-slate-600">
+                240-242 Washington St represents Empire Equity Holdings LLC’s
+                inaugural multifamily acquisition. The property is currently
+                undergoing operational stabilization focused on rent collection
+                discipline, tenant quality, maintenance systems, expense control,
+                and NOI optimization.
+              </p>
+
+              <h4 class="mt-8 font-serif text-2xl font-bold text-empire-navy">
+                Current Asset Management Focus
+              </h4>
+
+              <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Lease stabilization
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Tenant quality improvement
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Collection discipline
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Water and utility efficiency
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Turnover cost control
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Preventive maintenance
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Documentation and reporting
+                </li>
+
+                <li class="flex items-start gap-3 text-slate-600">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-empire-gold"></span>
+                  Long-term NOI optimization
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-empire-gray py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+            Advisory Services
+          </p>
+
+          <h2 class="mt-4 font-serif text-4xl font-bold text-empire-navy sm:text-5xl">
+            Multifamily Performance Audit
+          </h2>
+
+          <div class="gold-line mx-auto mt-6"></div>
+
+          <p class="mt-8 font-serif text-2xl leading-relaxed text-empire-navy">
+            Many small multifamily owners do not have a property problem.
+            They have an operations problem.
+          </p>
+
+          <p class="mt-6 text-lg leading-8 text-slate-600">
+            The Multifamily Performance Audit helps small multifamily owners
+            identify where NOI is being lost and where operational improvements
+            can create measurable value.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-8 lg:grid-cols-2">
+          <article class="bg-white p-8 shadow-sm sm:p-10">
+            <div class="flex items-center gap-4">
+              <div class="flex h-12 w-12 items-center justify-center bg-empire-navy text-empire-gold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 17v-6m4 6V7m4 10v-3M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="font-serif text-3xl font-bold text-empire-navy">
+                What We Review
+              </h3>
+            </div>
+
+            <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Rent roll performance
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Occupancy and vacancy trends
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Rent collection patterns
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Delinquency risk
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Lease expiration exposure
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Maintenance spend
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Turnover costs
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Utility expenses
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Property management performance
+              </li>
+              <li class="flex gap-3 text-slate-600">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                NOI improvement opportunities
+              </li>
+            </ul>
+          </article>
+
+          <article class="bg-empire-navy p-8 text-white shadow-sm sm:p-10">
+            <div class="flex items-center gap-4">
+              <div class="flex h-12 w-12 items-center justify-center bg-empire-gold text-empire-navy">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20h5v-2a4 4 0 0 0-4-4h-1M9 20H2v-2a4 4 0 0 1 4-4h3m8-4a4 4 0 1 0 0-8m-8 8a4 4 0 1 0 0-8m4 18v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2h9Z"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="font-serif text-3xl font-bold">
+                Who This Is For
+              </h3>
+            </div>
+
+            <ul class="mt-8 space-y-4 text-slate-300">
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Small multifamily owners
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Out-of-state investors
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                New landlords
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Owners with underperforming assets
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Investors preparing to stabilize or refinance a property
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 bg-empire-gold"></span>
+                Owners who need better visibility into operations
+              </li>
+            </ul>
+
+            <a
+              href="mailto:yveson@empireequityholdings.com?subject=Multifamily%20Performance%20Review%20Request"
+              class="focus-ring mt-10 inline-flex items-center justify-center rounded-sm bg-empire-gold px-7 py-4 text-sm font-bold uppercase tracking-wider text-empire-navy transition hover:bg-white"
+            >
+              Request a Performance Review
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insights -->
+    <section id="insights" class="bg-white py-20 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+              Ownership Perspective
+            </p>
+
+            <h2 class="mt-4 font-serif text-4xl font-bold text-empire-navy sm:text-5xl">
+              Insights
+            </h2>
+
+            <div class="gold-line mt-6"></div>
+
+            <p class="mt-7 text-lg leading-8 text-slate-600">
+              Empire Equity Holdings LLC regularly shares real-world
+              observations from multifamily ownership, asset management,
+              property operations, and NOI optimization.
+            </p>
+
+            <a
+              href="https://www.linkedin.com/company/empire-equity-holdings-llc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="focus-ring mt-8 inline-flex items-center gap-3 rounded-sm bg-empire-navy px-7 py-4 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-empire-gold hover:text-empire-navy"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+              </svg>
+              Follow Us on LinkedIn
+            </a>
+          </div>
+
+          <div class="divide-y divide-slate-200 border-y border-slate-200">
+            <article class="group py-6">
+              <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                Tenant Operations
+              </p>
+              <h3 class="mt-2 font-serif text-2xl font-bold text-empire-navy transition group-hover:text-empire-gold">
+                Tenant Culture vs. Delinquency
+              </h3>
+            </article>
+
+            <article class="group py-6">
+              <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                Collections
+              </p>
+              <h3 class="mt-2 font-serif text-2xl font-bold text-empire-navy transition group-hover:text-empire-gold">
+                Cash Flow Is Created Long Before Rent Is Due
+              </h3>
+            </article>
+
+            <article class="group py-6">
+              <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                Accountability
+              </p>
+              <h3 class="mt-2 font-serif text-2xl font-bold text-empire-navy transition group-hover:text-empire-gold">
+                Most Real Estate Problems Aren’t Property Problems. They’re Accountability Problems.
+              </h3>
+            </article>
+
+            <article class="group py-6">
+              <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                Property Management
+              </p>
+              <h3 class="mt-2 font-serif text-2xl font-bold text-empire-navy transition group-hover:text-empire-gold">
+                Property Management Isn’t About Maintenance. It’s About Information.
+              </h3>
+            </article>
+
+            <article class="group py-6">
+              <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                Asset Management
+              </p>
+              <h3 class="mt-2 font-serif text-2xl font-bold text-empire-navy transition group-hover:text-empire-gold">
+                The Most Profitable Deal I Work On Every Day Is the One I Already Own.
+              </h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-empire-navy py-20 text-white sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-empire-gold">
+              Business Inquiries
+            </p>
+
+            <h2 class="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
+              Contact Empire Equity Holdings LLC
+            </h2>
+
+            <div class="gold-line mt-6"></div>
+
+            <p class="mt-7 text-lg leading-8 text-slate-300">
+              For business inquiries, multifamily investment opportunities,
+              asset management discussions, partnership opportunities, or
+              information regarding our Multifamily Performance Audit services,
+              please contact us.
+            </p>
+
+            <div class="mt-10 space-y-6">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                  Primary Email
+                </p>
+
+                <a
+                  href="mailto:yveson@empireequityholdings.com"
+                  class="focus-ring mt-2 inline-block rounded text-lg text-white transition hover:text-empire-gold"
+                >
+                  yveson@empireequityholdings.com
+                </a>
+              </div>
+
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                  Phone
+                </p>
+
+                <a
+                  href="tel:+15169931267"
+                  class="focus-ring mt-2 inline-block rounded text-lg text-white transition hover:text-empire-gold"
+                >
+                  516-993-1267
+                </a>
+              </div>
+
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                  Website
+                </p>
+
+                <a
+                  href="https://www.empireequityholdings.com/"
+                  class="focus-ring mt-2 inline-block rounded text-lg text-white transition hover:text-empire-gold"
+                >
+                  www.empireequityholdings.com
+                </a>
+              </div>
+
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-empire-gold">
+                  Department Contacts
+                </p>
+
+                <div class="mt-3 grid gap-2 text-slate-300 sm:grid-cols-2">
+                  <a href="mailto:acquisitions@empireequityholdings.com" class="focus-ring rounded transition hover:text-empire-gold">
+                    acquisitions@empireequityholdings.com
+                  </a>
+
+                  <a href="mailto:ops@empireequityholdings.com" class="focus-ring rounded transition hover:text-empire-gold">
+                    ops@empireequityholdings.com
+                  </a>
+
+                  <a href="mailto:deals@empireequityholdings.com" class="focus-ring rounded transition hover:text-empire-gold">
+                    deals@empireequityholdings.com
+                  </a>
+
+                  <a href="mailto:info@empireequityholdings.com" class="focus-ring rounded transition hover:text-empire-gold">
+                    info@empireequityholdings.com
+                  </a>
+
+                  <a href="mailto:invest@empireequityholdings.com" class="focus-ring rounded transition hover:text-empire-gold">
+                    invest@empireequityholdings.com
+                  </a>
+                </div>
+              </div>
+
+              <a
+                href="https://www.linkedin.com/company/empire-equity-holdings-llc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="focus-ring inline-flex items-center gap-3 rounded-sm border border-empire-gold px-6 py-3 font-semibold text-empire-gold transition hover:bg-empire-gold hover:text-empire-navy"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+                </svg>
+                Empire Equity on LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- Static GitHub Pages Contact Form -->
+          <form
+            id="contactForm"
+            class="bg-white p-7 text-empire-charcoal shadow-2xl sm:p-10"
+          >
+            <div
+              id="formNotice"
+              class="mb-7 border-l-2 border-empire-gold bg-empire-gray px-5 py-4 text-sm leading-6 text-slate-600"
+            >
+              Complete the form and select “Prepare Email.” Your device’s email
+              application will open with the message addressed to Empire Equity
+              Holdings LLC.
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-bold text-empire-navy"
+                >
+                  Name
+                </label>
+
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="focus-ring mt-2 w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-slate-900 transition focus:border-empire-gold"
+                >
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-bold text-empire-navy"
+                >
+                  Email
+                </label>
+
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="focus-ring mt-2 w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-slate-900 transition focus:border-empire-gold"
+                >
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label
+                for="company"
+                class="block text-sm font-bold text-empire-navy"
+              >
+                Company
+              </label>
+
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                class="focus-ring mt-2 w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-slate-900 transition focus:border-empire-gold"
+              >
+            </div>
+
+            <div class="mt-6">
+              <label
+                for="inquiryType"
+                class="block text-sm font-bold text-empire-navy"
+              >
+                Inquiry Type
+              </label>
+
+              <select
+                id="inquiryType"
+                name="inquiryType"
+                class="focus-ring mt-2 w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-slate-900 transition focus:border-empire-gold"
+              >
+                <option value="General Business Inquiry">
+                  General Business Inquiry
+                </option>
+                <option value="Acquisition Opportunity">
+                  Acquisition Opportunity
+                </option>
+                <option value="Broker or Deal Submission">
+                  Broker or Deal Submission
+                </option>
+                <option value="Investment Partnership">
+                  Investment Partnership
+                </option>
+                <option value="Multifamily Performance Audit">
+                  Multifamily Performance Audit
+                </option>
+                <option value="Asset Management Discussion">
+                  Asset Management Discussion
+                </option>
+              </select>
+            </div>
+
+            <div class="mt-6">
+              <label
+                for="message"
+                class="block text-sm font-bold text-empire-navy"
+              >
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="focus-ring mt-2 w-full resize-y rounded-sm border border-slate-300 bg-white px-4 py-3 text-slate-900 transition focus:border-empire-gold"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="focus-ring mt-7 inline-flex w-full items-center justify-center rounded-sm bg-empire-gold px-7 py-4 text-sm font-bold uppercase tracking-wider text-empire-navy transition hover:bg-empire-navy hover:text-white"
+            >
+              Prepare Email
+            </button>
+
+            <p class="mt-4 text-center text-xs leading-5 text-slate-500">
+              Direct email:
+              <a
+                href="mailto:yveson@empireequityholdings.com"
+                class="font-semibold text-empire-navy underline decoration-empire-gold underline-offset-4"
+              >
+                yveson@empireequityholdings.com
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#030B15] text-white">
+    <div class="mx-auto max-w-7xl px-5 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div class="lg:col-span-2">
+          <img
+            src="logo.png"
+            alt="Empire Equity Holdings LLC logo"
+            class="h-14 w-auto max-w-[240px] object-contain"
+            loading="lazy"
+          >
+
+          <p class="mt-6 max-w-xl font-serif text-2xl font-bold">
+            Building Value. Strengthening Communities.
+          </p>
+
+          <p class="mt-4 max-w-xl leading-7 text-slate-400">
+            A Connecticut multifamily real estate investment and asset
+            management company focused on disciplined ownership, operational
+            excellence, and long-term stewardship.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-empire-gold">
+            Navigate
+          </h2>
+
+          <nav class="mt-5 flex flex-col gap-3 text-slate-400" aria-label="Footer navigation">
+            <a href="#mission" class="focus-ring rounded transition hover:text-white">Mission</a>
+            <a href="#about" class="focus-ring rounded transition hover:text-white">About</a>
+            <a href="#portfolio" class="focus-ring rounded transition hover:text-white">Portfolio</a>
+            <a href="#services" class="focus-ring rounded transition hover:text-white">Services</a>
+            <a href="#insights" class="focus-ring rounded transition hover:text-white">Insights</a>
+            <a href="#contact" class="focus-ring rounded transition hover:text-white">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-empire-gold">
+            Contact
+          </h2>
+
+          <div class="mt-5 space-y-3 text-slate-400">
+            <p>Connecticut Multifamily Housing</p>
+
+            <a
+              href="mailto:yveson@empireequityholdings.com"
+              class="focus-ring block break-all rounded transition hover:text-white"
+            >
+              yveson@empireequityholdings.com
+            </a>
+
+            <a
+              href="tel:+15169931267"
+              class="focus-ring block rounded transition hover:text-white"
+            >
+              516-993-1267
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/empire-equity-holdings-llc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="focus-ring inline-flex items-center gap-2 rounded transition hover:text-white"
+              aria-label="Empire Equity Holdings LLC LinkedIn page"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-7 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <p>
+          © 2026 Empire Equity Holdings LLC. All rights reserved.
+        </p>
+
+        <p>
+          Real Estate Investment & Asset Management
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+    const mobileCloseButton = document.getElementById("mobileCloseButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileOverlay = document.getElementById("mobileOverlay");
+    const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+    const contactForm = document.getElementById("contactForm");
+
+    function openMobileMenu() {
+      mobileMenu.classList.add("is-open");
+      mobileOverlay.classList.add("is-open");
+      mobileMenuButton.classList.add("is-open");
+
+      mobileMenu.setAttribute("aria-hidden", "false");
+      mobileOverlay.setAttribute("aria-hidden", "false");
+      mobileMenuButton.setAttribute("aria-expanded", "true");
+
+      document.body.style.overflow = "hidden";
+      mobileCloseButton.focus();
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove("is-open");
+      mobileOverlay.classList.remove("is-open");
+      mobileMenuButton.classList.remove("is-open");
+
+      mobileMenu.setAttribute("aria-hidden", "true");
+      mobileOverlay.setAttribute("aria-hidden", "true");
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+
+      document.body.style.overflow = "";
+    }
+
+    mobileMenuButton.addEventListener("click", openMobileMenu);
+    mobileCloseButton.addEventListener("click", closeMobileMenu);
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMobileMenu();
+      }
+    });
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const formData = new FormData(contactForm);
+
+      const name = formData.get("name").trim();
+      const email = formData.get("email").trim();
+      const company = formData.get("company").trim() || "Not provided";
+      const inquiryType = formData.get("inquiryType");
+      const message = formData.get("message").trim();
+
+      const subject = encodeURIComponent(
+        `${inquiryType} | Website Inquiry from ${name}`
+      );
+
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company}\n` +
+        `Inquiry Type: ${inquiryType}\n\n` +
+        `Message:\n${message}\n\n` +
+        `Submitted through www.empireequityholdings.com`
+      );
+
+      window.location.href =
+        `mailto:yveson@empireequityholdings.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+
+</body>
+</html>
